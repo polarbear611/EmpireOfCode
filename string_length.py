@@ -1,3 +1,6 @@
+#!usr/bin/python
+# -*- coding: utf-8 -*-
+
 def str_length(line):
     
 	return len(str(line))

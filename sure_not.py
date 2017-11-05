@@ -1,4 +1,5 @@
-#/bin/python
+#!usr/bin/python
+# -*- coding: utf-8 -*-
 
 def sure_not(line):
     return line if line.startswith('not ') else 'not ' + line
