@@ -8,8 +8,6 @@ def index_power(array, n):
     if n >= len(array):
         return -1
     return pow(array[n], n)
-    return None
-
 
 if __name__ == '__main__':
     # These "asserts" using only for self-checking and not necessary for auto-testing
