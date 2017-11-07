@@ -3,7 +3,6 @@
 
 OPERATION_NAMES = ("conjunction", "disjunction", "implication", "exclusive", "equivalence")
 
-
 def boolean(x, y, operation):
     if "conjunction" == operation:
         result = x and y
@@ -16,7 +15,6 @@ def boolean(x, y, operation):
     if "equivalence" == operation:
         result = x == y
     return int(result)
-
 
 if __name__ == '__main__':
     # These "asserts" using only for self-checking and not necessary for auto-testing
