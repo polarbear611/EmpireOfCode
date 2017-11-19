@@ -1,15 +1,20 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-def check_grid(grid):
-    g = grid[0]
-    for i in range(1, len(g)):
-        if g[i] == g[i - 1]:
+def check_line(line):
+    for i in range(len(line) - 1):
+        if line[i+1] == line[i]:
             return False
-    for i in range(1, len(grid)):
-        for j in range(1, len(g)):
-            if grid[i][j] == grid[i - 1][j] or grid[i][j] == grid[i][j-1]:
-                return False
+    return True
+
+def check_grid(grid):
+	for i in range(len(grid) - 1):
+		if grid[i+1][0] == grid[i][0]
+			return False
+	
+	for line in grid:
+		if not check_line(line):
+			return False
     return True
 
 if __name__ == '__main__':
